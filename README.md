@@ -1,4 +1,7 @@
 # QueueingModelsSimulators
+
+*Notice: This solution is based on **Steady-state parameters**!*
+
 ## Author:
 mSorsa ( Martin Sorsa ) 
 
