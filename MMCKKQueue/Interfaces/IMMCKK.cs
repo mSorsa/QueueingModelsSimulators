@@ -1,5 +1,8 @@
 ﻿namespace MMCKKQueue.Interfaces;
 
+/// <summary>
+/// Interface for M/M/c/K/K queueing model.
+/// </summary>
 public interface IMMCKK
 {
     /// <summary>

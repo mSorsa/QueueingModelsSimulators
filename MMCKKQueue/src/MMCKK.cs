@@ -1,12 +1,15 @@
-﻿using MathHelper.Interfaces;
-using MathHelper.src;
-using MMCKKQueue.Interfaces;
+﻿namespace MMCKKQueue.src;
 
-namespace MMCKKQueue.src;
-
+/// <summary>
+/// M/M/c/K/K queueing model.
+/// All formulas are found on page 261. See referenced material on git-page!
+/// </summary>
 public class MMCKK : IMMCKK
 {
-    IFactorializer factorializer = new Factorializer();
+    IFactorializer factorializer;
+
+    public MMCKK() { factorializer = new Factorializer(); }
+     
 
     /// <summary>
     /// P0. Probability System is empty.
@@ -26,7 +29,7 @@ public class MMCKK : IMMCKK
         for (int n = c; n <= K; n++)
             sum += (factorializer.Factorial(K) / (factorializer.Factorial(K - n) * factorializer.Factorial(c) * Math.Pow(c, n - c))) * Math.Pow((lam / mu), n);
         
-        return Math.Round(1 / sum, 3);
+        return Math.Round(Math.Pow(sum, -1), 3);
     }
 
     /// <summary>
@@ -44,7 +47,7 @@ public class MMCKK : IMMCKK
         for (int n = 0; n <= (K); n++)
             sum += n * Pn(lam, mu, c, K, n);
 
-        return Math.Round(1/sum, 3);
+        return Math.Round(Math.Pow(sum, -1), 3);
     }
 
     /// <summary>

@@ -1,6 +1,3 @@
-using MMCKKQueue.Interfaces;
-using MMCKKQueue.src;
-
 namespace MMCKKTester;
 
 public class MMCKKTests

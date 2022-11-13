@@ -1,12 +1,12 @@
-﻿using MathHelper.Interfaces;
-using MathHelper.src;
-using MMCQueue.Interfaces;
-
-namespace MMCQueue.src;
+﻿namespace MMCQueue.src;
 
 public class MMC : IMMC
 {
-    IFactorializer factorializer = new Factorializer();
+    IFactorializer factorializer;
+    
+    // ctor
+    public MMC() { factorializer = new Factorializer(); }
+    
     
     /// <summary>
     /// Not working yet.
