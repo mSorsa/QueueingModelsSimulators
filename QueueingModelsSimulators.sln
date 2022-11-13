@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMCQTester", "MMC\MMCTester
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMCKKQueue", "MMCKKQueue\MMCKKQueue.csproj", "{D3413A70-0C93-48D2-A14A-BCC4D16E1B59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMCKKTester", "MMCKKTester\MMCKKTester.csproj", "{CC1AF3A5-A4A8-47E4-A375-8DD36C5343D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMCKKQTester", "MMCKKTester\MMCKKQTester.csproj", "{CC1AF3A5-A4A8-47E4-A375-8DD36C5343D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
