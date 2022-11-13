@@ -2,7 +2,7 @@ namespace MMCTester;
 
 public class MMCTests
 {
-    IMMC MMCQueue = new MMC();
+    IMMC MMCQueue = new MMC(new MathHelper.src.Factorializer());
 
     [Theory]
     [InlineData(0.5, 1.0, 1, 0.5)]

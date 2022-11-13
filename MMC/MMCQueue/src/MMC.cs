@@ -5,7 +5,7 @@ public class MMC : IMMC
     IFactorializer factorializer;
     
     // ctor
-    public MMC() { factorializer = new Factorializer(); }
+    public MMC(Factorializer factorializer) { this.factorializer = factorializer; }
     
     
     /// <summary>

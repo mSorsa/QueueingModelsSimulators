@@ -10,18 +10,17 @@ public class Factorializer : IFactorializer
     
     /// <summary>
     /// Calculates the factorial of a number.
-    /// Factorial is the product of all positive integers (non-zero) less than or equal to number.
-    /// I.e.: 5! = 5 * 4 * 3 * 2 * 1 = 120
+    /// Factorial (denoted with a number followed by '!'), 
+    /// is the product of all positive (non-zero) integers less than or equal to number.
     /// </summary>
     /// <param name="number">Number to Factorialize.</param>
     /// <returns>Returns number factorial [number!]</returns>
-    /// <exception cref="ArgumentException"></exception>
     public int Factorial(int number)
     {
         // Verify number can be factorialized ( 0 <= number <= 12 )
         helper.validateNumber(number);
 
-        // 0! = 1 by definition. Assume number is at least 0.
+        // 0! = 1 by definition. Assume number is at least 0 number from validation.
         // Since we multiply by fact later, we cannot start on 0,
         // because anything mulitplied by 0 is 0.
         int fact = 1;
@@ -40,8 +39,8 @@ public class Factorializer : IFactorializer
         /// Number validation.
         /// </summary>
         /// <param name="num">Number to validate.</param>
-        /// <exception cref="ArgumentException"></exception>
-        /// <exception cref="OverflowException"></exception>
+        /// <exception cref="ArgumentException">num is negative.</exception>
+        /// <exception cref="OverflowException">num cannot be held in datatype int.</exception>
         public void validateNumber(int num)
         {
             if (num < 0)

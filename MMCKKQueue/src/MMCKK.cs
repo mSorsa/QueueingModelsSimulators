@@ -8,8 +8,8 @@ public class MMCKK : IMMCKK
 {
     IFactorializer factorializer;
 
-    public MMCKK() { factorializer = new Factorializer(); }
-     
+    public MMCKK(Factorializer factorializer) { this.factorializer = factorializer; }
+
 
     /// <summary>
     /// P0. Probability System is empty.
@@ -44,7 +44,7 @@ public class MMCKK : IMMCKK
     {
         double sum = 0.0;
         
-        for (int n = 0; n <= (K); n++)
+        for (int n = 0; n <= K; n++)
             sum += n * Pn(lam, mu, c, K, n);
 
         return Math.Round(Math.Pow(sum, -1), 3);

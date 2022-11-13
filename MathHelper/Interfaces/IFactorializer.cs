@@ -6,6 +6,6 @@ public interface IFactorializer
     /// Calculates the factorial of a number.
     /// </summary>
     /// <param name="number">Number to factorailize.</param>
-    /// <returns></returns>
+    /// <returns>Returns the number factorial</returns>
     int Factorial(int number);
 }

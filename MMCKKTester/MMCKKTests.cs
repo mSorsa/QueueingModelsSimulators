@@ -2,7 +2,7 @@ namespace MMCKKTester;
 
 public class MMCKKTests
 {
-    IMMCKK MMCKK = new MMCKK();
+    IMMCKK MMCKK = new MMCKK(new MathHelper.src.Factorializer());
     
     [Theory]
     [InlineData(1.0, 1.0, 1.0, 10, 0)]

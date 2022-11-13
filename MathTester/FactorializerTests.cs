@@ -20,7 +20,7 @@ public class FactorializerTests
     [InlineData(12, 479001600)]
     public void FactorialTests_Correct(int num, int expected)
     {
-        // Act, and Arrange
+        // Arrange, and Act
         var actual = factorialize.Factorial(num);
 
         // Assert
@@ -41,8 +41,8 @@ public class FactorializerTests
     [Theory]
     [InlineData(13)]
     [InlineData(1000)]
-    [InlineData(2000)]
-    [InlineData(3000)]
+    [InlineData(2365)]
+    [InlineData(int.MaxValue)]
     public void FactorialTest_OutOfRange(int num)
         => Assert.Throws<OverflowException>(() => factorialize.Factorial(num));
 }
