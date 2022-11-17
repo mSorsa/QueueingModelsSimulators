@@ -10,13 +10,13 @@ public class MMCTests
     [InlineData(5.0, 4.0, 5, 0.25)]
     [InlineData(9.0, 5.0, 2, 0.9)]
     [InlineData(0.2, 0.25, 1, 0.8)]
-    public void MMCrho_Valid(double lam, double mu, int c, double trueValue)
+    public void MMCrho_Valid(double lam, double mu, int c, double expected)
     {
         // Act
-        double rho = MMCQueue.Rho(lam, mu, c);
+        double actual = MMCQueue.Rho(lam, mu, c);
 
         // Assert
-        Assert.Equal(trueValue, rho);
+        Assert.Equal(expected, actual);
     }
 
     //[Theory]
@@ -25,11 +25,11 @@ public class MMCTests
     //[InlineData(5.0, 4.0, 5, 0.286)]
     //[InlineData(9.0, 5.0, 2, 0.053)]
     //[InlineData(0.2, 0.25, 1, 0.2)]
-    //public void MMCPempty_Valid(double lam, double mu, int c, double trueValue)
+    //public void MMCPempty_Valid(double lam, double mu, int c, double expected)
     //{
-    //    double p0 = MMCQueue.Pempty(lam, mu, c);
+    //    double actual = MMCQueue.Pempty(lam, mu, c);
 
-    //    Assert.Equal(p0, trueValue);
+    //    Assert.Equal(expected, actual);
     //}
 
 }

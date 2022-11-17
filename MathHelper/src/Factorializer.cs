@@ -20,9 +20,7 @@ public class Factorializer : IFactorializer
         // Verify number can be factorialized ( 0 <= number <= 12 )
         helper.validateNumber(number);
 
-        // 0! = 1 by definition. Assume number is at least 0 number from validation.
-        // Since we multiply by fact later, we cannot start on 0,
-        // because anything mulitplied by 0 is 0.
+        // 0! = 1 by definition. Assume number is at least 0 since validateNumber().
         int fact = 1;
         
         // i.e.: 5! = 5 * 4 * 3 * 2 * 1 = 120.

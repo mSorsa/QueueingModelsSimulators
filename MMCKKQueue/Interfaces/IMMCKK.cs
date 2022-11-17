@@ -24,4 +24,15 @@ public interface IMMCKK
     /// <param name="K"> Calling Population </param>
     /// <returns>L ( mean number in system. )</returns>
     double L(double lam, double mu, int c, int K);
+
+    /// <summary>
+    /// Pn, where n is the number in system.
+    /// </summary>
+    /// <param name="lam"> Arrival Rate </param>
+    /// <param name="mu"> Service Rate </param>
+    /// <param name="c"> Number of Servers </param>
+    /// <param name="K"> Calling Population </param>
+    /// <param name="n"> Given number in system </param>
+    /// <returns>The probability of n number in system</returns>
+    double Pn(double lam, double mu, int c, int K, int n);
 }
