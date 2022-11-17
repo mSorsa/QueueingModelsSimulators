@@ -2,6 +2,8 @@
 
 *Notice: This solution is based on **Steady-state parameters**!*
 
+__Notice2: PROJECT IS UNFINISHED. TESTS ARE NOT PASSING YET.__
+
 ## Author:
 mSorsa ( Martin Sorsa ) 
 
